@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Complete Form Solution</title>
+</head>
+<body>
+
+  <h1>Regístrate!</h1>
+
+  <form>
+    <div>
+      <label for="first-name">Nombre:</label>
+      <input type="text" name="first-name" id="first-name" placeholder="Juan" required />
+      <label for="last-name">Apellido:</label>
+      <input type="text" name="last-name" id="last-name" placeholder="García" required />
+    </div>
+    
+     <div>
+        <label for="radio-choice-1">Hombre</label>
+        <input type="radio" name="radio-choice" id="radio-choice-1" value="choice-1" />
+
+        <label for="radio-choice-2">Mujer</label>
+        <input type="radio" name="radio-choice" id="radio-choice-2" value="choice-2" />
+
+       <label for="radio-choice-3">Otro</label>
+        <input type="radio" name="radio-choice" id="radio-choice-3" value="choice-3" />
+     </div>
+
+    <div>
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" required placeholder="tu email">
+
+      <label for="password">Contraseña:</label>
+      <input type="password" name="password" id="password" pattern=".{5,10}" placeholder="tu contraseña" required title="5 to 10 characters">
+    </div>
+    
+    <div>
+      <label for="checkbox">Acepto los términos y condiciones</label>
+      <input type="checkbox" name="checkbox" id="checkbox" />
+    </div>
+
+    <div>
+      <input type="submit" value="Submit" />
+    </div>
+  </form>  
+
+</body>
+</html>
